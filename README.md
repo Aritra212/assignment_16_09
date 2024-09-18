@@ -1,6 +1,7 @@
 ## Prerequisites
 - Node.js
 - MongoDB
+- Postman
 
 # Follow the steps properly to run the project successfully
 
@@ -28,6 +29,20 @@ Now first let's try to run the backend first.
     cd ./backend
     npm i
     npm start
+  ```
+
+- Next open postman to add an admin to the database. ( You can add admin manualy also in the database named as **logins**, but in the backend I already create a route so if you want you can use the following URL. The method must be POST )
+  
+  **Backend URL**
+  ```bash
+    http://127.0.0.1:8000/api/v1/admin/create
+  ```
+  **POST BODY DATA Format**
+  ```bash
+    {
+      "userName" : "admin123",
+      "password" : "A12345678"
+    }
   ```
 
 Now move on to the frontend setup.
